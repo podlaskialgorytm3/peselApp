@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8eda9583ac.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.3a01df49.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Indie+Flower&family=M+PLUS+1:wght@100&family=Montserrat:wght@100&family=Nunito:wght@200&family=Open+Sans+Condensed:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
+    <title>Peselowiec</title>
+</head>
+<body>
+    <!-- <i class="fas fa-check-circle"></i>
+    <i class="fas fa-bolt"></i>
+    -->
+    <header>
+        <div class="mainText"><span class="text"></span><span class="cursor">|</span></div>
+    </header>
+    <article>
+        <div class="option validatorOption"><i class="fas fa-check-circle"></i>
+        <p>Walidator</p>
+        </div>
+        <div class="option generateOption">
+            <i class="fas fa-bolt"></i>
+            <p>Generator</p>
+        </div>
+    </article>
+    <div class="validator block">
+        <div class="finding"><input type="number" pattern="/^-?\d+\.?\d*$/" onkeypress="if(this.value.length==11) return false;">
+        <button>WALIDUJ</button>
+        </div>
+        <p class="problem"></p>
+        <p class="check"><span class="title"></span><span class="description"></span></p>
+        <p class="description">Ten pesel należy do osoby: </p>
+        <p class="date"><span class="title">Urodzoną dnia :</span><span class="description"></span></p>
+        <p class="sex"><span class="title">Płci :</span><span class="description"></span></p>
+        
+        <i class="fas fa-times val"></i>
+    </div>
+    <div class="generate block">
+        <div class="maintop">
+            <div class="top">
+            <input type="date" class="date" value="2022-01-01" required=""> 
+            <input type="number" title="Liczba peseli" class="number" min="1" max="10"></div>
+            <div class="sexSelect">
+            <input type="radio" class="sex male" value="male" name="sex">Mężczyzna
+            <input type="radio" class="sex female" value="female" name="sex">Kobieta</div>
+            <button>GENERUJ</button>
+        </div>
+        <p class="problemGenerate"></p>
+        <p class="description">Ten pesele należą do osoby: </p>
+        <p class="date"><span class="title">Urodzoną dnia :</span><span class="toGenerateDescription"></span></p>
+        <p class="sex"><span class="title">Płci :</span><span class="toGenerateDescription"></span></p>
+        <ul class="generateList"></ul>
+        <i class="fas fa-times gen"></i>
+    </div>
+    <script src="./index.63aff760.js" defer=""></script>
+</body>
+</html>
